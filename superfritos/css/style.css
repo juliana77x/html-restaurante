@@ -1,0 +1,173 @@
+/* Paleta de Colores:
+   Rojo Principal: #E31E24
+   Fondo Crema: #F9F4EE
+   Fondo Rosado Claro: #FDECEC
+   Vinotinto Footer: #4A0E0E
+*/
+
+body {
+    background-color: #F9F4EE; /* Color crema de fondo */
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid #FDECEC;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 70px;
+    height: auto;
+}
+
+.logo-container h1 {
+    color: #E31E24;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-weight: bold;
+    color: #4A0E0E;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav li:hover {
+    color: #E31E24;
+}
+
+/* Cuadrícula Superior */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 15px;
+}
+
+.info-grid section, .info-grid figure {
+    background-color: #FDECEC; /* Fondo rosado suave */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0;
+}
+
+.info-grid h3 {
+    color: #E31E24;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.info-grid p {
+    color: #4A0E0E;
+    margin: 8px 0;
+}
+
+.info-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid #E31E24;
+}
+
+/* Sección Central (Body) */
+.hero-content {
+    background-color: #FDECEC;
+    margin: 0 20px 20px 20px;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-content img {
+    width: 200px;
+    border-radius: 10px;
+    border: 4px solid #E31E24;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #4A0E0E;
+    font-weight: bold;
+    flex: 1;
+}
+
+/* Botón "Haga su pedido" */
+.btn-pedido {
+    background-color: #A64D5D; /* Color rosado oscuro/mate */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #4A0E0E; /* Vinotinto oscuro */
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 25px;
+    filter: brightness(0) invert(1); /* Hace los iconos blancos */
+}
+
+.whatsapp-link {
+    background-color: #128C7E;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
