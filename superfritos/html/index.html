@@ -7,12 +7,12 @@
     <meta name="Description" content="Mi primer proyecto - Sitio web de cocina, Restaurantes">
     <meta name="Keywords" content="ADSO, cocina, Fritos">
     <title>SUPER FRITOS</title>
-    
     <link rel="stylesheet" href="../css/style.css">
-</head> 
+</head>
 <body>
 
     <div class="container">
+
         <header>
             <div class="logo-container">
                 <img src="img/logo.jpg" alt="Logo Super Fritos">
@@ -20,59 +20,72 @@
             </div>
             <nav>
                 <ul>
-                    <li>inicio</li>
-                    <li>Conoce super fritos</li>
-                    <li>Tienda virtual</li>
-                    <li>Galeria</li>
-                    <li>Contacto</li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#conocenos">Conoce Super Fritos</a></li>
+                    <li><a href="#tienda">Tienda Virtual</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
+    <div class="ticker">
+     <span class="promo-badge">SUPER PROMOS!</span>
+      <marquee>Empanadas 3x2 todos los martes &nbsp;|&nbsp; Combo familiar con bebida gratis los fines de semana &nbsp;|&nbsp; 10% de descuento en pedidos por WhatsApp &nbsp;|&nbsp; Chicharrón especial solo por hoy &nbsp;|&nbsp; Envío gratis en pedidos mayores a $20.000</marquee>
+    </div>   
 
         <main>
             <div class="info-grid">
-                <section>
-                    <h3>Historia y Politica</h3>
-                    <p>mision</p>
-                    <p>vision</p>
+                <section id="conocenos">
+                    <h3>Historia y Política</h3>
+                    <p>Misión</p>
+                    <p>Visión</p>
                     <p>Historia</p>
-                    <p>politica de la empresa</p>
+                    <p>Política de la empresa</p>
                 </section>
 
-                <section>
+                <section id="tienda">
                     <h3>Tienda</h3>
-                    <p>catalogos</p>
-                    <p>productos</p>
+                    <p>Catálogos</p>
+                    <p>Productos</p>
                     <p>Haga su pedido</p>
                 </section>
 
-                <figure>
+                <figure id="galeria">
                     <img src="img/empanada.jpg" alt="Plato de fritos">
                 </figure>
 
-                <section>
+                <section id="contacto">
                     <h3>Contacto</h3>
-                    <p>3124670764</p>
-                    <p>telefono</p>
-                    <p>correo</p>
+                    <p>📞 3124670764</p>
+                    <p>✉️ superfritos4@gmail.com</p>
                 </section>
             </div>
 
-            <div class="hero-content">
-                <img src="../img/banner.png" alt="Empanadas">
-                <p>La empanadas y fritos mas ricos de bucaramanga</p>
+            <div class="hero-content" id="inicio">
+                <img src="img/chicharron.jpg" alt="Empanadas">
+                <img src="img/recetac.jpg" alt="Empanadas">
+                <div>
+                    <p>Las empanadas y fritos más ricos de Bucaramanga</p>
+                    <button class="btn-pedido" onclick="window.open('https://wa.me/573124670764')">
+                        🛒 Haga su pedido
+                    </button>
+                </div>
             </div>
         </main>
-
+        
+        <div class="mapa-container">
+            <h3>¿dónde nos ubicamos?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2sco!4v1775846556918!5m2!1ses-419!2sco!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHE3WmY2YVE.!2m2!1d7.133847098069995!2d-73.11983341543124!3f68.68283228543818!4f32.52687473733289!5f0.7820865974627469" width="100%" height="450" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
         <footer>
-            <span>footer- pie de pagina</span>
+            <span>© Fritos Bucaramanga 2026</span>
             <div class="social-icons">
-                <span>FB</span>
-                <span>IG</span>
+                <a href="https://facebook.com" target="_blank" class="btn-social">Facebook</a>
+                <a href="https://instagram.com" target="_blank" class="btn-social">Instagram</a>
             </div>
-            <a href="#" class="whatsapp-link">WHATSAPP</a>
-            <span>Copyright Juliana sanmiguel 2023</span>
+            <a href="https://wa.me/573124670764" target="_blank" class="whatsapp-link">💬 WhatsApp</a>
         </footer>
+
     </div>
 
 </body>
